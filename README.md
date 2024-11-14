@@ -53,3 +53,40 @@ The CNN model should achieve an accuracy of approximately 90% on the test set, d
 ![image](https://github.com/user-attachments/assets/dc51efa5-528e-45b4-b390-3f4c1b7715b5)
 
 
+# CNN with Data Augmentation on Fashion MNIST
+
+This project demonstrates training a Convolutional Neural Network (CNN) with data augmentation using Keras and TensorFlow. The model is trained on the Fashion MNIST dataset to classify images of clothing.
+
+## Features
+- **Data Augmentation**: Uses rotation, shifting, shearing, zoom, and horizontal flips to increase training data diversity.
+- **CNN Architecture**: A simple CNN with Conv2D, MaxPooling, and Dense layers, with dropout for regularization.
+
+## Requirements
+- `tensorflow`
+- `matplotlib`
+
+Install dependencies with:
+```bash
+pip install tensorflow matplotlib
+
+Code Overview
+Data Preprocessing and Augmentation
+
+Load and normalize Fashion MNIST data.
+Apply data augmentation with ImageDataGenerator for real-time augmented image generation.
+Model Definition
+
+A sequential CNN model with:
+2 convolutional layers
+2 max-pooling layers
+Dense and dropout layers
+Training
+
+Train the model using augmented data for 10 epochs with fit.
+
+##Results
+After training, the model is evaluated on the test set. The data augmentation enhances model generalization by introducing variability in the training data.
+![image](https://github.com/user-attachments/assets/8696e694-2d88-463e-ac27-9f3c6d329f99)
+
+
+
